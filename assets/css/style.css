@@ -3,7 +3,7 @@
 
 h1,
 h2 {
-	font-family: Arial;
+	font-family: 'Hind', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -14,7 +14,7 @@ h5,
 h6,
 p,
 a {
-	font-family: Arial;
+	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -44,9 +44,8 @@ body {
 	line-height: 26px;
 	margin: 0;
 	padding: 0;
-	border: 2px solid lime;
-
 }
+
 .btn {
 	padding: 8px 25px;
 	text-transform: capitalize;
@@ -365,15 +364,8 @@ body {
 	padding-top: 28px;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-
 }
-.logo img {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	border: 3px solid white;
-	margin: 0 auto;
-.}
+
 .logo a {
 	color: #fff;
 	font-size: 1.5em;
@@ -458,16 +450,15 @@ body {
 
 #home {
 	height: 100vh;
-
 }
+
 .home-bg {
 	position: relative;
 	width: 100%;
-	height:100%;
+	height: 100%;
 	background-size: cover;
 	z-index: 1;
 	background-repeat: no-repeat;
-	border: 1px solid pink;
 }
 
 .overlay:after {
@@ -492,12 +483,11 @@ body {
 }
 
 .profile-pic img {
-	width: 200px;
-	height: 200px;
+	width: 170px;
+	height: 170px;
 	border-radius: 50%;
-	border: 3px solid red;
+	border: 3px solid #fff;
 	margin: 0 auto;
-	position: center;
 }
 
 .home-text h1 {
@@ -508,12 +498,12 @@ body {
 }
 
 .home-text h3 {
-	color: lime;
+	color: rgba(255, 255, 255, 0.66);
 	letter-spacing: 2px;
 }
 
 .arrow {
-	color: red;
+	color: #fff;
 	font-size: 3em;
 	white-space: nowrap;
 	position: absolute;
@@ -548,63 +538,125 @@ body {
 
 /* 06. ABOUT
 =================================================*/
- #about{
-	background-color: black;
-	width: 100%;
-	height:100%;
-	border: 1px solid red;
+
+#idaboutcollapse{
+	padding-top: 3px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#about {
+	padding: 90px 0 75px;
+	background: #fff;
+}
+
+#about h2 {
+	margin-top: 0;
+}
+
+.description {
+	max-width: 100%;
+	width: 41em;
+	margin-bottom: -10px;
+}
+
+.description p {
+	margin-bottom: 20px;
+}
+
+.social-icons {
+	padding-left: 0px;
 }
 
 .social-icons li {
 	display: inline-block;
 	display: -moz-inline-stack;
 	list-style: none;
-	padding-right: 12%;
-	}
+	margin: 0;
+	padding: 0;
+}
 
 .social-icons li a {
-	color: #48b14d;
+	color: #131313;
+	background: rgba(42, 41, 41, 0);
 	display: inline-block;
 	display: -moz-inline-stack;
+	width: 50px;
+	height: 40px;
 	box-sizing: border-box;
 	-webkit-transition: all ease-in-out 0.3s;
 	transition: all ease-in-out 0.3s;
 }
 
 .social-icons li a:hover {
-	color: red;
+	color: #48b14d;
 }
 
 .social-icons li a i {
 	font-size: 1.3em;
 }
 
+.facts {
+	float: right;
+	margin-top: 30px;
+}
 
-/* 07. MY EDUCATION AND LICENCES=================================================*/
-table, th, td {
-  border: 1px solid green;
+.count-item {
+	margin-right: 0;
+	margin-bottom: 20px;
 }
-th, td {
-  border-color: lime;
-text-align: center;
+
+.numscroller {
+	color: #131313;
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
 }
-th {
-  background:skyblue;
+
+.count-name-intro {
+	color: #131313;
+	font-size: 1.3em;
+	font-weight: 600;
+	font-family: 'Lato', sans-serif;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+	#badge{
+		margin-left: -10px;
+	}
+}
+
+
 /* 07. SKILLS
 =================================================*/
+
+#skills {
+	padding: 95px 0 50px;
+	background: #f2f2f2;
+}
+
+#skills h2 {
+	margin-bottom: 50px;
+}
+
+.skills-right {
+	float: right;
+}
+
 .progress-box {
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 
 .progress-box p {
 	font-weight: 600;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 .progress {
-	height: 4px;
 	background-color: rgba(26, 26, 26, 0.31);
+	height: 20px;
 	border-radius: 4px;
 	overflow: hidden;
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
@@ -613,11 +665,11 @@ th {
 
 .progress-box .progress {
 	box-shadow: none;
-	height: 4px;
+	height: 6px;
 }
 
 .progress-box .progress-bar {
-	transition-duration: 4000ms;
+	transition-duration: 2000ms;
 	transition-property: all;
 	transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
